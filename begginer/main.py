@@ -1,20 +1,22 @@
 '''
-Created on 2 лист. 2017 р.
+Created on 2.11.2017
 
 @author: m1k1e
 '''
 from Tkinter import *
 
 def Hello(event):
-    print "Hello, User!"
+    print ("Hello, User")
 
 root=Tk()
 
-btn = Button(root,                  #родительское окно
-             text="Click me",       #надпись на кнопке
-             width=30,height=5,     #ширина и высота
-             bg="white",fg="black") #цвет фона и надписи
-btn.bind("<Button-1>", Hello)       #при нажатии ЛКМ на кнопку вызывается функция Hello
+#first comment
+
+btn = Button(root,                  
+             text="Click me",       
+             width=30,height=5,     
+             bg="white",fg="black") 
+btn.bind("<Button-1>", Hello)       
 btn.pack()                     
 
 root.mainloop()
