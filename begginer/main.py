@@ -9,7 +9,7 @@ from Tkinter import *
 
 
 def Hello(event):
-    print ("Hello, User")
+    label1.config(text='Hello, user!')
 
 
 root=Tk()
@@ -20,6 +20,8 @@ root.title('First GUI program')
 
 root.geometry("300x200")
 
+label1 = Label(root, bg="red", fg="black", font="20")
+label1.place(relx=.5, rely=.3, anchor="c", height=30, width=130, bordermode=OUTSIDE)
 
 btn = Button(root,                  
              text="Click me",       
